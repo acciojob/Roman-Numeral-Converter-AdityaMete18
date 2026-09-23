@@ -18,11 +18,11 @@ function convertToRoman(num) {
   //your code here
 	let number="";
 	for(i=0 ; i<=12 ; i++){
-		let num = obj[i][0];
+		let no = obj[i][0];
 		let value = obj[i][1];
 
-		while(value>=num){
-			number = number + num ;
+		while(value<=num){
+			number = number + no ;
 			num = num - value;
 		}
 	}
